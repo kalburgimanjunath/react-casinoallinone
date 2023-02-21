@@ -13,6 +13,7 @@ import {
   DropdownItem,
   NavbarText,
 } from 'reactstrap';
+import Search from './Search';
 export default function Menu({ args }) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -35,6 +36,9 @@ export default function Menu({ args }) {
     <div>
       <Navbar color="" {...args}>
         <NavbarBrand href="/">slottica</NavbarBrand>
+        <div>
+          <Search />
+        </div>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto" navbar>
