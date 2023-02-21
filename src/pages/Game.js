@@ -9,6 +9,7 @@ export default function Game({ GAMES }) {
     <div>
       {/* <Welcome data={GAMES} /> */}
       {/* <Offer /> */}
+
       <Dashboard game={gameId} />
     </div>
   );
